@@ -1,0 +1,81 @@
+package Builder;
+
+public class Computer {
+	
+	//Kötelezõ paraméterek
+	private int hddCapacity;
+	private String hddType;
+	private String graphicscardType;
+	
+	//Opcionális paraméterek
+	private boolean isBluetooth;
+	private String networkcardType;
+	
+	public Computer() {
+		
+	}
+
+	//Getterek
+	public int getHddCapacity() {
+		return hddCapacity;
+	}
+
+	public String getHddType() {
+		return hddType;
+	}
+
+	public String getGraphicscardType() {
+		return graphicscardType;
+	}
+
+	public boolean isBluetooth() {
+		return isBluetooth;
+	}
+
+	public String getNetworkcardType() {
+		return networkcardType;
+	}
+	
+	
+	//Builder osztály
+	public static class ComputerBuilder {
+		
+		//Kötelezõ paraméterek
+		private int hddCapacity;
+		private String hddType;
+		private String graphicscardType;
+		
+		//Opcionális paraméterek
+		private boolean isBluetooth;
+		private String networkcardType;
+		
+		//A konstruktor állítja be a kötelezõ paramétereket
+		public ComputerBuilder(int hddCapacity, String hddType, String graphicscardType) {
+			this.hddCapacity = hddCapacity;
+			this.hddType = hddType;
+			this.graphicscardType = graphicscardType;
+		}
+
+		//A setterekkel lehet beállítani az opcionális paramétereket
+		public void setBluetooth(boolean isBluetooth) {
+			this.isBluetooth = isBluetooth;
+			return this;
+		}
+
+		public void setNetworkcardType(String networkcardType) {
+			this.networkcardType = networkcardType;
+			return this;
+		}
+		
+		//Build függvény. Ez adja vissza a computer objektumot
+		public Computer build() {
+			return new Computer(this);
+		}
+		
+		
+		
+	}
+	
+	
+
+}

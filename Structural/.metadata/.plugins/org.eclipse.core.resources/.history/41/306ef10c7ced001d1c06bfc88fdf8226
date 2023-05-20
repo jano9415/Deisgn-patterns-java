@@ -1,0 +1,41 @@
+package adapter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		List<Vehicle> vehicles = new ArrayList<>();
+		
+		Car car = new Car("Suzuki swift", 140, 4);
+		
+		Bicycle bicycle = new Bicycle("Mountain bike", 30, 2);
+		
+		Bus bus = new Bus("Ikarus D3000", 85, 4);
+		
+		vehicles.add(car);
+		vehicles.add(bicycle);
+		
+		//Ez így nem mûködik. Ehhez kell az adapter
+		//vehicles.add(bus);
+		
+		//Az adapterrel viszont már mûködni fog
+		//A bus így fog viselkedni, mint egy vehcile
+		BusAdapter busAdapter = new BusAdapter(bus);
+		vehicles.add(busAdapter);
+		
+		System.out.println(vehicles);
+		System.out.println(vehicles.get(2).getClass());
+		
+		/*for(Vehicle vehicle : vehicles) {
+			System.out.println("Név: " + vehicle.getName());
+			System.out.println("Sebesség: " + vehicle.getSpeed());
+			System.out.println("Kerekek száma: " + vehicle.getWheels());
+		}*/
+		
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package bridge;
+
+public class Person extends Thing {
+	
+	private int age;
+	
+	public Person(View view1, View view2) {
+		super(view1, view2);
+	}
+
+	@Override
+	public void show() {
+		System.out.println("Személy megjelenítve:");
+		System.out.println();
+		view1.draw();
+		view2.draw();
+		
+	}
+
+}

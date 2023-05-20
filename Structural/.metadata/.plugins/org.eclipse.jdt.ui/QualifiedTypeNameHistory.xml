@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="composite.Shape"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+    <fullyQualifiedTypeName name="composite.Rechtangle"/>
+    <fullyQualifiedTypeName name="composite.Circle"/>
+    <fullyQualifiedTypeName name="composite.DrawGroup"/>
+    <fullyQualifiedTypeName name="decorator.ShapeDecorator"/>
+    <fullyQualifiedTypeName name="decorator.Rechtangle"/>
+    <fullyQualifiedTypeName name="decorator.Triangle"/>
+    <fullyQualifiedTypeName name="decorator.BlueShapeDecorator"/>
+    <fullyQualifiedTypeName name="decorator.OrangeShapeDecorator"/>
+    <fullyQualifiedTypeName name="decorator.Shape"/>
+    <fullyQualifiedTypeName name="facade.PsSqlHelper"/>
+    <fullyQualifiedTypeName name="facade.MsSqlHelper"/>
+    <fullyQualifiedTypeName name="facade.HelperFacade"/>
+    <fullyQualifiedTypeName name="facade.HelperFacade.DbTypes"/>
+    <fullyQualifiedTypeName name="adapter.Socket"/>
+    <fullyQualifiedTypeName name="adapter.SocketAdapter"/>
+    <fullyQualifiedTypeName name="adapter.Bird"/>
+    <fullyQualifiedTypeName name="adapter.ToyDuck"/>
+    <fullyQualifiedTypeName name="adapter.Eagle"/>
+    <fullyQualifiedTypeName name="adapter.ToyBird"/>
+    <fullyQualifiedTypeName name="adapter.ToyGoose"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="adapter.BirdAdapter"/>
+    <fullyQualifiedTypeName name="bridge.Person"/>
+    <fullyQualifiedTypeName name="bridge.Product"/>
+    <fullyQualifiedTypeName name="bridge.Thing"/>
+    <fullyQualifiedTypeName name="bridge.View"/>
+    <fullyQualifiedTypeName name="bridge.Animal"/>
+    <fullyQualifiedTypeName name="bridge.TableView"/>
+    <fullyQualifiedTypeName name="bridge.ImageView"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="adapter.Car"/>
+    <fullyQualifiedTypeName name="adapter.Bicycle"/>
+    <fullyQualifiedTypeName name="adapter.Vehicle"/>
+    <fullyQualifiedTypeName name="adapter.BusAdapter"/>
+</qualifiedTypeNameHistroy>

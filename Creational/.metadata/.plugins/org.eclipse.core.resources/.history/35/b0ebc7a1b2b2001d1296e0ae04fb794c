@@ -1,0 +1,29 @@
+package abstractfactory;
+
+
+//Õs adatbázis gyár osztály
+public abstract class DbFactory {
+	
+	//A getFactory függvény adja vissza a megfelelõ gyár objektumot. Attól függõen, hogy a bejövõ
+	//paraméter "relational" vagy "nonrelational"
+	public static DbFactory getFactory(String factoryType) {
+		switch(factoryType) {
+		case "relational" :
+			return new RelationalDbFactory();
+		case "nonrelational" :
+			return new NonRelationDbFactory();
+		default :
+			throw new IllegalArgumentException("Incorrect type: " + factoryType);
+		}
+	}
+	
+	//Ez a függvény adja vissza az adatbázis objektumot, attól függõen, hogy mit kap paraméterben.
+	//A paraméterek: "mongodb" , "firebasedb" , "mssql" , "pssql"
+	//Absztrakt függvény, a gyerek osztályok fejtik ki
+	public abstract Database getDatabase(String databaseType);
+	
+	protected String pelda() {
+		return "alap mukodes";
+	}
+
+}

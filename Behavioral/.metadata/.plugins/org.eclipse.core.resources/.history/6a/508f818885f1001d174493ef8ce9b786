@@ -1,0 +1,21 @@
+package templatemethod;
+
+public abstract class Game {
+	
+	abstract void initialize();
+	abstract void startPlay();
+	abstract void endPlay();
+	
+	//Sablon függvény
+	public final void play() {
+		
+		//Játék inicializálása
+		initialize();
+		//Játék kezdése
+		startPlay();
+		//Játék befejezése
+		endPlay();
+		
+	}
+
+}

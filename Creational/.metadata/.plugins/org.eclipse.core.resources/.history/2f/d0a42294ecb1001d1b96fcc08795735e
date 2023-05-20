@@ -1,0 +1,56 @@
+package Builder;
+
+public class Computer {
+	
+	//Kötelezõ paraméterek
+	private int hddCapacity;
+	private String hddType;
+	private String graphicscardType;
+	
+	//Opcionális paraméterek
+	private boolean isBluetooth;
+	private String networkcardType;
+	
+	public Computer() {
+		
+	}
+
+	//Getterek
+	public int getHddCapacity() {
+		return hddCapacity;
+	}
+
+	public String getHddType() {
+		return hddType;
+	}
+
+	public String getGraphicscardType() {
+		return graphicscardType;
+	}
+
+	public boolean isBluetooth() {
+		return isBluetooth;
+	}
+
+	public String getNetworkcardType() {
+		return networkcardType;
+	}
+	
+	
+	//Builder osztály
+	public static class ComputerBuilder {
+		
+		//Kötelezõ paraméterek
+		private int hddCapacity;
+		private String hddType;
+		private String graphicscardType;
+		
+		//Opcionális paraméterek
+		private boolean isBluetooth;
+		private String networkcardType;
+		
+	}
+	
+	
+
+}

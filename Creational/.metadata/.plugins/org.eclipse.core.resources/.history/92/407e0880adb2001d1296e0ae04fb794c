@@ -1,0 +1,12 @@
+package abstractfactory;
+
+public class Main {
+	
+	//Relációs adatbázis gyár objektum létrehozása
+	DbFactory relationalDbFactory = DbFactory.getFactory("relational");
+	
+	//Microsoft sql adatbázis objektum létrehozása
+	Database msSqlDatabase = relationalDbFactory.getDatabase("mssql");
+	
+
+}

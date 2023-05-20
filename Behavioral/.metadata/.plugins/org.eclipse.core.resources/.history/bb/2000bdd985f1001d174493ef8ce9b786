@@ -1,0 +1,23 @@
+package templatemethod;
+
+public abstract class Game {
+	
+	//Ezeket a függvényeket a gyerek osztályok felül írják
+	abstract void initialize();
+	abstract void startPlay();
+	abstract void endPlay();
+	
+	//Sablon függvény
+	//Final, ezért a gyerek osztályok ezt a függvényt nem tudják felül írni
+	public final void play() {
+		
+		//Játék inicializálása
+		initialize();
+		//Játék kezdése
+		startPlay();
+		//Játék befejezése
+		endPlay();
+		
+	}
+
+}

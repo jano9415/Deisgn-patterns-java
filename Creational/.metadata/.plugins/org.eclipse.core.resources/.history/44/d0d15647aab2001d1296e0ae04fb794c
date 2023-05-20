@@ -1,0 +1,10 @@
+package abstractfactory;
+
+public interface Database {
+	
+	void connect();
+	void select();
+	void insert();
+	void delete();
+
+}

@@ -1,0 +1,98 @@
+package Builder;
+
+public class Computer {
+	
+	//Kötelezõ paraméterek
+	private int hddCapacity;
+	private String hddType;
+	private String graphicscardType;
+	
+	//Opcionális paraméterek
+	private boolean isBluetooth;
+	private String networkcardType;
+	
+	public Computer(ComputerBuilder builder) {
+		
+		//Kötelezõ paraméterek beállítása
+		this.hddCapacity = builder.hddCapacity;
+		this.hddType = builder.hddType;
+		this.graphicscardType = builder.graphicscardType;
+		//Opcionális paraméterek beállítása
+		this.isBluetooth = builder.isBluetooth;
+		this.networkcardType = builder.networkcardType;
+		
+	}
+
+	//Getterek
+	public int getHddCapacity() {
+		return hddCapacity;
+	}
+
+	public String getHddType() {
+		return hddType;
+	}
+
+	public String getGraphicscardType() {
+		return graphicscardType;
+	}
+
+	public boolean isBluetooth() {
+		return isBluetooth;
+	}
+
+	public String getNetworkcardType() {
+		return networkcardType;
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "Computer [hddCapacity=" + hddCapacity + ", hddType=" + hddType + ", graphicscardType="
+				+ graphicscardType + ", isBluetooth=" + isBluetooth + ", networkcardType=" + networkcardType + "]";
+	}
+
+
+
+
+	//Builder osztály
+	public static class ComputerBuilder {
+		
+		//Kötelezõ paraméterek
+		private int hddCapacity;
+		private String hddType;
+		private String graphicscardType;
+		
+		//Opcionális paraméterek
+		private boolean isBluetooth;
+		private String networkcardType;
+		
+		//A konstruktor állítja be a kötelezõ paramétereket
+		public ComputerBuilder(int hddCapacity, String hddType, String graphicscardType) {
+			this.hddCapacity = hddCapacity;
+			this.hddType = hddType;
+			this.graphicscardType = graphicscardType;
+		}
+
+		//A setterekkel lehet beállítani az opcionális paramétereket
+		public ComputerBuilder setBluetooth(boolean isBluetooth) {
+			this.isBluetooth = isBluetooth;
+			return this;
+		}
+
+		public ComputerBuilder setNetworkcardType(String networkcardType) {
+			this.networkcardType = networkcardType;
+			return this;
+		}
+		
+		//Build függvény. Ez adja vissza a computer objektumot
+		public Computer build() {
+			return new Computer(this);
+		}
+		
+		
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,7 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="command.Document"><rhs name\="command.Document"/></lhs><lhs name\="command.ActionListenerCommand"><rhs name\="command.ActionOpen"/><rhs name\="command.ActionSave"/></lhs><lhs name\="command.MenuOptions"><rhs name\="command.MenuOptions"/></lhs><lhs name\="command.ButtonOptions"><rhs name\="command.ButtonOptions"/></lhs><lhs name\="iterator.Iterator"><rhs name\="iterator.CarRepository$CarIterator"/></lhs><lhs name\="iterator.Container"><rhs name\="iterator.CarRepository"/></lhs><lhs name\="iterator.CarRepository"><rhs name\="iterator.CarRepository"/></lhs><lhs name\="strategy.Context"><rhs name\="strategy.Context"/></lhs><lhs name\="strategy.Strategy"><rhs name\="strategy.AddOperation"/><rhs name\="strategy.SubtractOperation"/><rhs name\="strategy.MultiplyOperation"/></lhs><lhs name\="templatemethod.Game"><rhs name\="templatemethod.Football"/><rhs name\="templatemethod.Basketball"/></lhs><lhs name\="mediator.User"><rhs name\="mediator.User"/></lhs></history>
+content_assist_number_of_computers=12
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=21
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

@@ -1,0 +1,24 @@
+package bridge;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		//Absztarkt osztály -> Thing
+		//Interfész: -> View
+		//Kapcsolat az absztarkt osztály és az interfész között
+		//A személyt és a terméket is meg tudom jeleníteni táblázatos és galéria nézetben is
+		
+		Thing thing1 = new Person(new TableView(), new ImageView());
+		thing1.setName("Nagy László");
+		thing1.setDescription("Ez az én leírásom");
+		thing1.show();
+		
+		Thing thing2 = new Product(new TableView(), new ImageView());
+		thing2.setName("Iphone x");
+		thing2.setTitle("Mobiltelefon");
+		thing2.setDescription("Ez egy mobiltelefon");
+		thing2.show();
+	}
+
+}

@@ -1,0 +1,23 @@
+package bridge;
+
+public class Person extends Thing {
+	
+	
+	public Person(View view1, View view2) {
+		super(view1, view2);
+	}
+
+	@Override
+	public void show() {
+		System.out.println("Személy megjelenítve:");
+		System.out.println("Név: " + this.getName());
+		System.out.println("Leírás: " + this.getDescription());
+		view1.show();
+		view2.show();
+		
+	}
+
+	
+	
+
+}

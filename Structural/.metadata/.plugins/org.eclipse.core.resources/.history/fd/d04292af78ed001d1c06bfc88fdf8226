@@ -1,0 +1,26 @@
+package adapter;
+
+public class Car implements Vehicle {
+	
+	private String name;
+	private int speed;
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int getSpeed() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getWheels() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

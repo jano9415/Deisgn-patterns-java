@@ -1,0 +1,6 @@
+package strategy;
+
+//Kivonás, konkrét stratégia.
+public class SubtractOperation {
+
+}

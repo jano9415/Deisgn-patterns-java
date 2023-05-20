@@ -1,0 +1,18 @@
+package factorymethod;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		//Gyár objektum létrehozása
+		NotificationFactory notificationFactory = new NotificationFactory();
+		
+		//Sms értesítés objektum létrehozása. A gyár gyártja le az objektumot.
+		Notification notification = notificationFactory.createNotification("sms");
+		
+		notification = notificationFactory.createNotification("push");
+		
+		//Sms küldése
+		notification.notifyUser();
+	}
+
+}

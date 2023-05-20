@@ -1,0 +1,2 @@
+module AdapterList {
+}

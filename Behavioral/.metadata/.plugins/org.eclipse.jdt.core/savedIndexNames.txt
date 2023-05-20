@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\Users\janoo\Desktop\Programozó interjú\Tervezési minták\Viselkedési minták\.metadata\.plugins\org.eclipse.jdt.core
+2971701134.index
+2452782416.index
+4069564176.index
+3148887510.index
+196973030.index
+4202520094.index

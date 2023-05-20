@@ -1,0 +1,15 @@
+package bridge;
+
+public class AnimalAdapter extends Thing {
+	
+	public AnimalAdapter(View view1, View view2) {
+		super(view1, view2);
+	}
+
+	@Override
+	public void show() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

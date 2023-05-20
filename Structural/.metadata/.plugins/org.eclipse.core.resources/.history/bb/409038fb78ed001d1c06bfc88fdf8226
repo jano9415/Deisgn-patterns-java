@@ -1,0 +1,40 @@
+package adapter;
+
+public class Bicycle implements Vehicle {
+	
+	private String name;
+	private int speed;
+	private int wheels;
+	
+	public Bicycle() {
+		
+	}
+
+	public Bicycle(String name, int speed, int wheels) {
+		super();
+		this.name = name;
+		this.speed = speed;
+		this.wheels = wheels;
+	}
+
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int getSpeed() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getWheels() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+
+}

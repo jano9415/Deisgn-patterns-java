@@ -1,0 +1,5 @@
+package templatemethod;
+
+public abstract class Game {
+
+}

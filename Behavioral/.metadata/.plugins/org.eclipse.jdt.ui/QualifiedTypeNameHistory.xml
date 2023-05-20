@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="command.Document"/>
+    <fullyQualifiedTypeName name="command.ActionOpen"/>
+    <fullyQualifiedTypeName name="command.ActionListenerCommand"/>
+    <fullyQualifiedTypeName name="command.ActionSave"/>
+    <fullyQualifiedTypeName name="command.MenuOptions"/>
+    <fullyQualifiedTypeName name="command.ButtonOptions"/>
+    <fullyQualifiedTypeName name="iterator.Container"/>
+    <fullyQualifiedTypeName name="iterator.CarRepository.CarIterator"/>
+    <fullyQualifiedTypeName name="iterator.CarRepository"/>
+    <fullyQualifiedTypeName name="iterator.Iterator"/>
+    <fullyQualifiedTypeName name="strategy.Strategy"/>
+    <fullyQualifiedTypeName name="strategy.Context"/>
+    <fullyQualifiedTypeName name="strategy.AddOperation"/>
+    <fullyQualifiedTypeName name="strategy.SubtractOperation"/>
+    <fullyQualifiedTypeName name="strategy.MultiplyOperation"/>
+    <fullyQualifiedTypeName name="templatemethod.Game"/>
+    <fullyQualifiedTypeName name="templatemethod.Football"/>
+    <fullyQualifiedTypeName name="templatemethod.Basketball"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="mediator.ChatRoomMediator"/>
+    <fullyQualifiedTypeName name="mediator.User"/>
+</qualifiedTypeNameHistroy>

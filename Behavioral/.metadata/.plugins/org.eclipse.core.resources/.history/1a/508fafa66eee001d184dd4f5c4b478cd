@@ -1,0 +1,24 @@
+package command;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Document document = new Document();
+		
+		ActionListenerCommand clickOpen = new ActionOpen(document);
+		ActionListenerCommand clickSave = new ActionSave(document);
+		
+		//Dokumentum megnyitása és mentése a menü gomb által
+		MenuOptions menu = new MenuOptions(clickOpen, clickSave);
+		
+		menu.clickOpen();
+		menu.clickSave();
+		
+		//Dokumentum megnyitása és mentése a gui gomb által
+		ButtonOptions guiButton = new ButtonOptions(clickOpen, clickSave);
+		guiButton.clickOpen();
+		guiButton.clickSave();
+	}
+
+}

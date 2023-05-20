@@ -1,0 +1,17 @@
+package bridge;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Thing thing1 = new Person(new TableView(), new ImageView());
+		thing1.setName("Nagy László");
+		thing1.setDescription("Ez az én leírásom");
+		thing1
+		thing1.show();
+		
+		Thing thing2 = new Product(new TableView(), new ImageView());
+		thing2.show();
+	}
+
+}

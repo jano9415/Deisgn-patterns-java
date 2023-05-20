@@ -1,0 +1,19 @@
+package bridge;
+
+public class Product extends Thing {
+	
+	private int stock;
+	
+	public Product(View view1, View view2) {
+		super(view1, view2);
+	}
+
+	@Override
+	public void show() {
+		System.out.println("Termék megjelenítve:");
+		view1.draw();
+		view2.draw();
+		
+	}
+
+}

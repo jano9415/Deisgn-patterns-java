@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.xml.crypto.Data"/>
+    <fullyQualifiedTypeName name="Singleton.Database"/>
+    <fullyQualifiedTypeName name="factorymethod.SmsNotification"/>
+    <fullyQualifiedTypeName name="factorymethod.EmailNotification"/>
+    <fullyQualifiedTypeName name="factorymethod.PushNotification"/>
+    <fullyQualifiedTypeName name="factorymethod.NotificationFactory"/>
+    <fullyQualifiedTypeName name="factorymethod.Notification"/>
+    <fullyQualifiedTypeName name="Builder.Computer"/>
+    <fullyQualifiedTypeName name="Builder.Computer.ComputerBuilder"/>
+    <fullyQualifiedTypeName name="abstractfactory.RelationDbFactory"/>
+    <fullyQualifiedTypeName name="abstractfactory.RelationalDbFactory"/>
+    <fullyQualifiedTypeName name="abstractfactory.NonRelationDbFactory"/>
+    <fullyQualifiedTypeName name="abstractfactory.MongoDb"/>
+    <fullyQualifiedTypeName name="abstractfactory.FirebaseDb"/>
+    <fullyQualifiedTypeName name="abstractfactory.PsSql"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="abstractfactory.DbFactory"/>
+    <fullyQualifiedTypeName name="abstractfactory.Database"/>
+    <fullyQualifiedTypeName name="abstractfactory.MsSql"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,18 @@
+package abstractfactory;
+
+//Nem relációs adatbázis gyár osztály
+public class NonRelationDbFactory extends DbFactory {
+
+	@Override
+	public Database getDatabase(String databaseType) {
+		switch(databaseType) {
+		case "mongodb" :
+			return new MongoDb();
+		case "firebasedb" :
+			return new FirebaseDb();
+		default :
+			return null;
+		}
+	}
+
+}

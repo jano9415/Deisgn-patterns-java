@@ -1,0 +1,18 @@
+package command;
+
+//Konkrét command osztály
+public class ActionOpen implements ActionListenerCommand {
+	
+	private Document document;
+	
+	public ActionOpen(Document document) {
+		this.document = document;
+	}
+
+	@Override
+	public void execute() {
+		document.open();
+		
+	}
+
+}

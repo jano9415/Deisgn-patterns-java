@@ -1,0 +1,37 @@
+package abstractfactory;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		//Relációs adatbázis gyár objektum létrehozása
+		DbFactory relationalDbFactory = DbFactory.getFactory("relational");
+		
+		//Microsoft sql adatbázis objektum létrehozása
+		//Microsoft sql mûveletek végrehajtása
+		Database msSqlDatabase = relationalDbFactory.getDatabase("mssql");
+		
+		msSqlDatabase.connect();
+		msSqlDatabase.select();
+		msSqlDatabase.insert();
+		msSqlDatabase.delete();
+		System.out.println();
+		
+		//Postgre sql adatbázis objektum létrehozása
+		//Postgre sql mûveletek végrehajtása
+		Database psSqlDatabase = relationalDbFactory.getDatabase("pssql");
+		
+		psSqlDatabase.connect();
+		psSqlDatabase.select();
+		psSqlDatabase.insert();
+		psSqlDatabase.delete();
+		System.out.println();
+		
+	}
+	
+
+	
+	
+	
+
+}

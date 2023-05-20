@@ -1,0 +1,11 @@
+package bridge;
+
+public class TableView implements View {
+
+	@Override
+	public void draw() {
+		System.out.println("Megjelenítve táblázatos formában");
+		
+	}
+
+}

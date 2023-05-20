@@ -1,0 +1,45 @@
+package adapter;
+
+//Ez az osztály nem implementálja a Vehicle interfészt
+//Hasonlóan mûködik, mint a Vehicle, de mégis más
+public class Bus {
+	
+	private String name;
+	private int maxSpeed;
+	private int wheels;
+	private int windows;
+	
+	public Bus() {
+		
+	}
+	
+	public Bus(String name, int maxSpeed, int wheels) {
+		super();
+		this.name = name;
+		this.maxSpeed = maxSpeed;
+		this.wheels = wheels;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getMaxSpeed() {
+		return maxSpeed;
+	}
+
+	public int getWheels() {
+		return wheels;
+	}
+
+	public int getWindows() {
+		return windows;
+	}
+	
+	
+	
+	
+	
+	
+
+}

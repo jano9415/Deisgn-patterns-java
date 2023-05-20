@@ -1,0 +1,15 @@
+package bridge;
+
+abstract class Thing {
+	
+	protected View view1;
+	protected View view2;
+	
+	protected Thing(View view1, View view2) {
+		this.view1 = view1;
+		this.view2 = view2;
+	}
+	
+	abstract public void show();
+
+}

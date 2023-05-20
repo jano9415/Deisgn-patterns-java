@@ -1,0 +1,18 @@
+package abstractfactory;
+
+
+//Õs adatbázis gyár osztály
+public abstract class DbFactory {
+	
+	public static DbFactory getFactory(String factoryType) {
+		switch(factoryType) {
+		case "relational" :
+			return new RelationalDbFactory();
+		case "nonrelational" :
+			return new NonRelationDbFactory();
+		default :
+			return null;
+		}
+	}
+
+}

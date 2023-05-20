@@ -1,0 +1,29 @@
+package iterator;
+
+public class CarRepository implements Container {
+	
+	public String names[] = {"Honda", "Nissan", "Suzuki", "Open", "Ferrari", "Volvo", "Ifa", "Jeep", "Dodge"};
+
+	@Override
+	public Iterator getIterator() {
+		
+		return new CarIterator();
+	}
+	
+	private class CarIterator implements Iterator {
+
+		@Override
+		public boolean hasNext() {
+			// TODO Auto-generated method stub
+			return false;
+		}
+
+		@Override
+		public Object next() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+	}
+
+}

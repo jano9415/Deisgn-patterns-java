@@ -1,0 +1,33 @@
+package adapter;
+
+public class BusAdapter implements Vehicle {
+	
+	private Bus bus;
+	
+	public BusAdapter() {
+
+	}
+	
+	public BusAdapter(Bus bus) {
+		bus = this.bus;
+	}
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int getSpeed() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getWheels() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

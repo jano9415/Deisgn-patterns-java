@@ -1,0 +1,17 @@
+package Builder;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Computer computer1 = new Computer.ComputerBuilder(4000, "hddtype", "gcardtype")
+				.setBluetooth(false)
+				.setNetworkcardType("ncardtype").build();
+		
+		System.out.println(computer1.toString());
+		
+
+		
+	}
+
+}

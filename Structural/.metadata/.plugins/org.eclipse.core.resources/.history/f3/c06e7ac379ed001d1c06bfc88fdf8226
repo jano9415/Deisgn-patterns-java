@@ -1,0 +1,10 @@
+package adapter;
+
+//Ez az osztály nem implementálja a Vehicle interfészt
+public class Bus {
+	
+	private String name;
+	private int maxSpeed;
+	private int wheels;
+
+}

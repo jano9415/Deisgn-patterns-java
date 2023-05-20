@@ -1,0 +1,11 @@
+package bridge;
+
+public class ImageView implements View {
+
+	@Override
+	public void draw() {
+		System.out.println("Megjelenítve galéria nézetben");
+		
+	}
+
+}

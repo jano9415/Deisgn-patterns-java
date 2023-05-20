@@ -1,0 +1,20 @@
+package abstractfactory;
+
+
+//Õs adatbázis gyár osztály
+//A getFactory függvény adja vissza a megfelelõ gyár objektumot. Attól függõen, hogy a bejövõ
+//paraméter "relational" vagy "nonrelational"
+public abstract class DbFactory {
+	
+	public static DbFactory getFactory(String factoryType) {
+		switch(factoryType) {
+		case "relational" :
+			return new RelationalDbFactory();
+		case "nonrelational" :
+			return new NonRelationDbFactory();
+		default :
+			return null;
+		}
+	}
+
+}
